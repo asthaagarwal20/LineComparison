@@ -20,8 +20,10 @@ namespace LineComparison
             double LineTwoLength = calculate(3, 4, 3, 5);
             if (LineOneLength == LineTwoLength)
                 Console.WriteLine("Length of lines are equal");
+            else if (LineOneLength > LineTwoLength)
+                Console.WriteLine("Length of line 1 is greater than line 2");
             else
-                Console.WriteLine("Length of lines are not equal");
+                Console.WriteLine("Length of line 2 is greater than line 1");
         }
     }
 }
